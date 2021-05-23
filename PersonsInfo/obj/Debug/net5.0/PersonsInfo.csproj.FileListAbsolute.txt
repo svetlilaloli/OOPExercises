@@ -1,0 +1,16 @@
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.exe
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.deps.json
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.runtimeconfig.json
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.runtimeconfig.dev.json
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.dll
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\ref\PersonsInfo.dll
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\bin\Debug\net5.0\PersonsInfo.pdb
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.csprojAssemblyReference.cache
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.AssemblyInfoInputs.cache
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.AssemblyInfo.cs
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.csproj.CoreCompileInputs.cache
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.dll
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\ref\PersonsInfo.dll
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.pdb
+C:\Users\Sony Vaio\source\repos\CSharpOOPExercises\PersonsInfo\obj\Debug\net5.0\PersonsInfo.genruntimeconfig.cache
