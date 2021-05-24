@@ -9,10 +9,6 @@ namespace FootballTeamGenerator
         {
             string[] line = Console.ReadLine().Split(';');
             List<Team> teams = new();
-            Team team = new(line[1]);
-            teams.Add(team);
-
-            line = Console.ReadLine().Split(';');
 
             while (line[0] != "END")
             {
@@ -22,8 +18,7 @@ namespace FootballTeamGenerator
                     {
                         case "Team":
                             {
-                                team = new(line[1]);
-                                teams.Add(team);
+                                teams.Add(new(line[1]));
                             }
                             break;
                         case "Add":
