@@ -1,6 +1,6 @@
 ﻿namespace Car
 {
-    interface IElectricCar
+    public interface IElectricCar
     {
         public int Battery { get;}
     }

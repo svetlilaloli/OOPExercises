@@ -1,6 +1,6 @@
 ﻿namespace Car
 {
-    interface ICar
+    public interface ICar
     {
         public string Model { get;}
         public string Colour { get;}
