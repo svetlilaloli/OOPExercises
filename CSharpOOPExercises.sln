@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{D8C6C15C-633A-4679-A016-99FB67756372}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{4D567E23-8862-4BA9-A480-5F8228CE7444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{D8C6C15C-633A-4679-A016-99FB67756372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C6C15C-633A-4679-A016-99FB67756372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C6C15C-633A-4679-A016-99FB67756372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D567E23-8862-4BA9-A480-5F8228CE7444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D567E23-8862-4BA9-A480-5F8228CE7444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D567E23-8862-4BA9-A480-5F8228CE7444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D567E23-8862-4BA9-A480-5F8228CE7444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
