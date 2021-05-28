@@ -14,13 +14,15 @@
             for (int i = 0; i < n; i++)
             {
                 line = Console.ReadLine().Split();
+                double km = double.Parse(line[2]);
+
                 if (line[0] == "Drive")
                 {
                     if (line[1] == "Car")
                     {
-                        if (car.Drive(double.Parse(line[2])))
+                        if (car.Drive(km))
                         {
-                            Console.WriteLine($"Car travelled {double.Parse(line[2])} km");
+                            Console.WriteLine($"Car travelled {km} km");
                         }
                         else
                         {
@@ -29,9 +31,9 @@
                     }
                     else if (line[1] == "Truck")
                     {
-                        if (truck.Drive(double.Parse(line[2])))
+                        if (truck.Drive(km))
                         {
-                            Console.WriteLine($"Truck travelled {double.Parse(line[2])} km");
+                            Console.WriteLine($"Truck travelled {km} km");
                         }
                         else
                         {
@@ -43,11 +45,11 @@
                 {
                     if (line[1] == "Car")
                     {
-                        car.Refuel(double.Parse(line[2]));
+                        car.Refuel(km);
                     }
                     else if (line[1] == "Truck")
                     {
-                        truck.Refuel(double.Parse(line[2]));
+                        truck.Refuel(km);
                     }
                 }
             }
