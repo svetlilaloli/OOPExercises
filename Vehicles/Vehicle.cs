@@ -1,14 +1,32 @@
 ﻿namespace Vehicles
 {
+    using System;
     public abstract class Vehicle
     {
-        public Vehicle(double fuelQuantity, double fuelConsumption)
+        private double fuelQuantity;
+        public Vehicle(double fuelQuantity, double fuelConsumption, int tankCapacity)
         {
-            FuelQuantity = fuelQuantity;
             FuelConsumption = fuelConsumption;
+            TankCapacity = tankCapacity;
+            FuelQuantity = fuelQuantity > tankCapacity ? 0 : fuelQuantity;
         }
-        public abstract double FuelQuantity { get; protected set; }
-        public abstract double FuelConsumption { get; protected set; }
+        public double FuelQuantity 
+        {
+            get
+            {
+                return fuelQuantity;
+            }
+            protected set
+            {
+                if (value > TankCapacity)
+                {
+                    throw new ArgumentException($"Cannot fit {value - fuelQuantity} fuel in the tank");
+                }
+                fuelQuantity = value;
+            }
+        }
+        public double FuelConsumption { get; protected set; }
+        public int TankCapacity { get; protected set; }
         public abstract bool Drive(double distance);
         public abstract void Refuel(double liters);
     }
