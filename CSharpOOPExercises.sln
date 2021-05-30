@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes2", "Shapes2\Shapes2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Vehicles\Vehicles.csproj", "{484A38A5-1FFC-4D78-AAC2-3FB16C56911C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiding", "Raiding\Raiding.csproj", "{14B887CB-100E-4112-B91A-B9BD402B0F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{484A38A5-1FFC-4D78-AAC2-3FB16C56911C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484A38A5-1FFC-4D78-AAC2-3FB16C56911C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484A38A5-1FFC-4D78-AAC2-3FB16C56911C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B887CB-100E-4112-B91A-B9BD402B0F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B887CB-100E-4112-B91A-B9BD402B0F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B887CB-100E-4112-B91A-B9BD402B0F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B887CB-100E-4112-B91A-B9BD402B0F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
