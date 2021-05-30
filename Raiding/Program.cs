@@ -41,6 +41,11 @@
                     heroes.Add(baseHero);
                 }
             }
+
+            foreach (BaseHero hero in heroes)
+            {
+                Console.WriteLine(hero.CastAbility());
+            }
             int bossPower = int.Parse(Console.ReadLine());
             int sumPower = heroes.Sum(h => h.Power);
 

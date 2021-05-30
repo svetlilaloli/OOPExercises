@@ -5,7 +5,7 @@
         public Warrior(string name) : base(name, 100) { }
         public override string CastAbility()
         {
-            return $"{GetType()} – {Name} healed for {Power}";
+            return $"{GetType().Name} – {Name} healed for {Power}";
         }
     }
 }
