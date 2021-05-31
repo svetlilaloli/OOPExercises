@@ -5,7 +5,7 @@
     using System.Reflection;
     public class Tracker
     {
-        public void PrintMethodsByAuthor()
+        public static void PrintMethodsByAuthor()
         {
             var type = typeof(Program);
             var methods = type.GetMethods(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
