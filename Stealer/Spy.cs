@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Stealer
+﻿namespace Stealer
 {
+    using System;
+    using System.Linq;
+    using System.Reflection;
+    using System.Text;
     public class Spy
     {
         public string StealFieldInfo(string investigatedClass, params string[] fields)
@@ -25,9 +22,9 @@ namespace Stealer
             }
             return result.ToString().Trim();
         }
-        public string AnalyzeAccessModifiers(string className)
+        public string AnalyzeAccessModifiers(string investigatedClass)
         {
-            Type classType = Type.GetType(className);
+            Type classType = Type.GetType(investigatedClass);
             FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public);
             MethodInfo[] classPublicMethods = classType.GetMethods(BindingFlags.Instance | BindingFlags.Public);
             MethodInfo[] classNonPublicMethods = classType.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic);
@@ -44,6 +41,21 @@ namespace Stealer
             foreach (MethodInfo method in classPublicMethods.Where(m => m.Name.StartsWith("set")))
             {
                 result.AppendLine($"{method.Name} have to be private!");
+            }
+            return result.ToString().Trim();
+        }
+        public string RevealPrivateMethods(string investigatedClass)
+        {
+            Type classType = Type.GetType(investigatedClass);
+            MethodInfo[] classNonPublicMethods = classType.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic);
+
+            StringBuilder result = new();
+            result.AppendLine($"All Private Methods of Class: {investigatedClass}");
+            result.AppendLine($"Base Class: {classType.BaseType.Name}");
+
+            foreach (MethodInfo method in classNonPublicMethods)
+            {
+                result.AppendLine($"{method.Name}");
             }
             return result.ToString().Trim();
         }
