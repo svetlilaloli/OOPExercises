@@ -9,7 +9,7 @@
         public string StealFieldInfo(string investigatedClass, params string[] fields)
         {
             Type classType = Type.GetType(investigatedClass);
-            FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static 
+            FieldInfo[] classFields = classType.GetFields(BindingFlags.Instance | BindingFlags.Static
                 | BindingFlags.NonPublic | BindingFlags.Public);
 
             StringBuilder result = new();
@@ -56,6 +56,22 @@
             foreach (MethodInfo method in classNonPublicMethods)
             {
                 result.AppendLine($"{method.Name}");
+            }
+            return result.ToString().Trim();
+        }
+        public string CollectGettersAndSetters(string investigatedClass)
+        {
+            Type classType = Type.GetType(investigatedClass);
+            MethodInfo[] classMethods = classType.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+            StringBuilder result = new();
+
+            foreach (MethodInfo method in classMethods.Where(m => m.Name.StartsWith("get")))
+            {
+                result.AppendLine($"{method.Name} will return {method.ReturnType}");
+            }
+            foreach (MethodInfo method in classMethods.Where(m => m.Name.StartsWith("set")))
+            {
+                result.AppendLine($"{method.Name} will set field of {method.GetParameters().First().ParameterType}");
             }
             return result.ToString().Trim();
         }

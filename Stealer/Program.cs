@@ -12,6 +12,8 @@
             Console.WriteLine(result);
             result = spy.RevealPrivateMethods("Stealer.Hacker");
             Console.WriteLine(result);
+            result = spy.CollectGettersAndSetters("Stealer.Hacker");
+            Console.WriteLine(result);
         }
     }
 }
