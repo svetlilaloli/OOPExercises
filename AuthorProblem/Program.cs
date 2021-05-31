@@ -1,15 +1,15 @@
 ﻿namespace AuthorProblem
 {
-    [Author("Svetlana")]
+    [Author("John")]
     public class Program
     {
-        [Author("Vassileva")]
+        [Author("Smith")]
         public static void Main()
         {
             var tracker = new Tracker();
             tracker.PrintMethodsByAuthor();
         }
-        [Author("Svetlana")]
+        [Author("James")]
         public static void JustMethod()
         {
 
